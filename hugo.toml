@@ -16,7 +16,7 @@ defaultContentLanguageInSubdir = true
 [params]
 author.name = "Manuel Romero"
 
-images = ["images/logo_web.png"]
+images = ["/images/logo_web.png"]
 
 
 
