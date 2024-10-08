@@ -1,0 +1,59 @@
+#baseURL = 'http://web.infenlaces.com/despliegue/'
+baseURL='https://mAlejandror.github.io/despliegue/'
+languageCode = 'en-us'
+title = 'Despliegue de aplicaciones web'
+
+publishDir = "docs"
+
+theme = "relearn"
+
+defaultContentLanguage = "es"  # Esto debe coincidir con el código de idioma en [Languages]
+
+enableMultilingualMenu = true
+defaultContentLanguageInSubdir = true
+
+
+[params]
+author.name = "Manuel Romero"
+
+images = ["images/logo_web.png"]
+
+
+
+[languages]
+[languages.es.params]
+        landingPageName = "<i class='fas fa-school'></i> CPIFP Los Enlaces"
+        landingPageLinkURL = 'https://cpilosenlaces.com'
+
+
+
+
+# Default: false
+imageEffects.border = true
+# Default: true
+imageEffects.lazy = true
+# Default: true
+imageEffects.lightbox = true
+# Default: false
+imageEffects.shadow = false
+[[params.themeVariant]]
+identifier = 'relearn-light'
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-docker'></i>docker"
+identified = ""
+url = "https://www.docker.com/"
+weight = 1
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-wikipedia-w'></i>   Wiki del curso"
+identified = ""
+url = "https://es.wikieducator.org/Usuario:ManuelRomero/ProgramacionWeb/Contenido"
+weight = 2
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-amazon'></i>   Amazon"
+identified = ""
+url = "https://aws.amazon.com/es/"
+weight = 3
+
