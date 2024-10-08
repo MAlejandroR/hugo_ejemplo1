@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Despliegue de aplicaciones web</title>
+    <link>https://mAlejandror.github.io/hugo_ejemplo1/es/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 04 Oct 2024 18:56:41 +0200</lastBuildDate>
+    <atom:link href="https://mAlejandror.github.io/hugo_ejemplo1/es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Presentación</title>
+      <link>https://mAlejandror.github.io/hugo_ejemplo1/es/presentacion/index.html</link>
+      <pubDate>Fri, 04 Oct 2024 18:56:41 +0200</pubDate>
+      <guid>https://mAlejandror.github.io/hugo_ejemplo1/es/presentacion/index.html</guid>
+      <description>Módulo del segundo curso flowchart LR A[Sistemas informáticos] --&gt;|antes de estudiar| B[Despliegue de aplicaciones] Es un módulo más de sistemas que de desarrollo&#xA;Pero es fundamental para poder hacer que nuestros desarrollos lleguen al público` Desplegar es subir a un servidor un desarrollo de manera funcional</description>
+    </item>
+  </channel>
+</rss>
