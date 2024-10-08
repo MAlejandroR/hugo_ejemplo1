@@ -1,5 +1,5 @@
 #baseURL = 'http://web.infenlaces.com/despliegue/'
-baseURL='https://mAlejandror.github.io/despliegue/'
+baseURL='https://mAlejandror.github.io/hugo_ejemplo1/'
 languageCode = 'en-us'
 title = 'Despliegue de aplicaciones web'
 
