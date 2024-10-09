@@ -1,5 +1,5 @@
-#baseURL = 'http://web.infenlaces.com/despliegue/'
-baseURL='https://mAlejandror.github.io/hugo_ejemplo1/'
+baseURL = 'http://web.infenlaces.com/despliegue/'
+#baseURL='https://mAlejandror.github.io/hugo_ejemplo1/'
 languageCode = 'en-us'
 title = 'Despliegue de aplicaciones web'
 
@@ -20,8 +20,6 @@ images = ["/images/logo_web.png"]
 
 
 
-[languages]
-[languages.es.params]
         landingPageName = "<i class='fas fa-school'></i> CPIFP Los Enlaces"
         landingPageLinkURL = 'https://cpilosenlaces.com'
 
