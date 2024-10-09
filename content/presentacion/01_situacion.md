@@ -16,5 +16,6 @@ weight= 10
 * Vamos a trabajar con linux como nuestro sistema operativo
 * Usaremos mucho el terminal para las diferentes acciones
 
+![desplegando](images/despliegue.png)
 
 <img src ="/images/linux_server.png" alt="Linux server" />
