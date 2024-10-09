@@ -16,4 +16,5 @@ weight= 10
 * Vamos a trabajar con linux como nuestro sistema operativo
 * Usaremos mucho el terminal para las diferentes acciones
 
-[Linux Server](images/linux_server.png)
+
+<img src ="/images/linux_server.png" alt="Linux server" />
