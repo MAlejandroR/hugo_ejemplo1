@@ -9,8 +9,6 @@ theme = "relearn"
 
 defaultContentLanguage = "es"  # Esto debe coincidir con el código de idioma en [Languages]
 
-enableMultilingualMenu = true
-defaultContentLanguageInSubdir = true
 
 
 [params]
