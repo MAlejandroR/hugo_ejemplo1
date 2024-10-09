@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 6.4.0+tip">
+    <meta name="description" content="Git y GitHub Introducción a Git Conceptos básicos de control de versiones: qué es Git y cómo funciona. Comandos fundamentales de Git: init, clone, add, commit, push, pull, branch. GitHub: Repositorios remotos Uso de GitHub para almacenar y gestionar repositorios de forma remota. Creación y administración de ramas en GitHub. Pull requests y colaboración en proyectos. GitHub Actions (CI/CD) Introducción a GitHub Actions para automatizar flujos de trabajo. Configuración de pipelines CI/CD para desplegar aplicaciones. Integración de GitHub Actions con AWS y otros servicios.">
+    <meta name="author" content="Manuel Romero">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://web.infenlaces.com/images/logo_web.png">
+    <meta name="twitter:title" content="Git y Github :: Despliegue de aplicaciones web">
+    <meta name="twitter:description" content="Git y GitHub Introducción a Git Conceptos básicos de control de versiones: qué es Git y cómo funciona. Comandos fundamentales de Git: init, clone, add, commit, push, pull, branch. GitHub: Repositorios remotos Uso de GitHub para almacenar y gestionar repositorios de forma remota. Creación y administración de ramas en GitHub. Pull requests y colaboración en proyectos. GitHub Actions (CI/CD) Introducción a GitHub Actions para automatizar flujos de trabajo. Configuración de pipelines CI/CD para desplegar aplicaciones. Integración de GitHub Actions con AWS y otros servicios.">
+    <meta property="og:url" content="http://web.infenlaces.com/despliegue/es/presentacion/051_git/index.html">
+    <meta property="og:site_name" content="Despliegue de aplicaciones web">
+    <meta property="og:title" content="Git y Github :: Despliegue de aplicaciones web">
+    <meta property="og:description" content="Git y GitHub Introducción a Git Conceptos básicos de control de versiones: qué es Git y cómo funciona. Comandos fundamentales de Git: init, clone, add, commit, push, pull, branch. GitHub: Repositorios remotos Uso de GitHub para almacenar y gestionar repositorios de forma remota. Creación y administración de ramas en GitHub. Pull requests y colaboración en proyectos. GitHub Actions (CI/CD) Introducción a GitHub Actions para automatizar flujos de trabajo. Configuración de pipelines CI/CD para desplegar aplicaciones. Integración de GitHub Actions con AWS y otros servicios.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Presentación">
+    <meta property="article:published_time" content="2024-10-04T18:56:41+02:00">
+    <meta property="article:modified_time" content="2024-10-04T18:56:41+02:00">
+    <meta property="og:image" content="http://web.infenlaces.com/images/logo_web.png">
+    <meta itemprop="name" content="Git y Github :: Despliegue de aplicaciones web">
+    <meta itemprop="description" content="Git y GitHub Introducción a Git Conceptos básicos de control de versiones: qué es Git y cómo funciona. Comandos fundamentales de Git: init, clone, add, commit, push, pull, branch. GitHub: Repositorios remotos Uso de GitHub para almacenar y gestionar repositorios de forma remota. Creación y administración de ramas en GitHub. Pull requests y colaboración en proyectos. GitHub Actions (CI/CD) Introducción a GitHub Actions para automatizar flujos de trabajo. Configuración de pipelines CI/CD para desplegar aplicaciones. Integración de GitHub Actions con AWS y otros servicios.">
+    <meta itemprop="datePublished" content="2024-10-04T18:56:41+02:00">
+    <meta itemprop="dateModified" content="2024-10-04T18:56:41+02:00">
+    <meta itemprop="wordCount" content="84">
+    <meta itemprop="image" content="http://web.infenlaces.com/images/logo_web.png">
+    <title>Git y Github :: Despliegue de aplicaciones web</title><link rel="icon" href="/images/favicon.webp" type="image/bmp">
+    <link href="/despliegue/css/fontawesome-all.min.css?1728492289" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/despliegue/css/fontawesome-all.min.css?1728492289" rel="stylesheet"></noscript>
+    <link href="/despliegue/css/nucleus.css?1728492289" rel="stylesheet">
+    <link href="/despliegue/css/auto-complete.css?1728492289" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/despliegue/css/auto-complete.css?1728492289" rel="stylesheet"></noscript>
+    <link href="/despliegue/css/perfect-scrollbar.min.css?1728492289" rel="stylesheet">
+    <link href="/despliegue/css/fonts.css?1728492289" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/despliegue/css/fonts.css?1728492289" rel="stylesheet"></noscript>
+    <link href="/despliegue/css/theme.css?1728492289" rel="stylesheet">
+    <link href="/despliegue/css/theme-relearn-light.css?1728492289" rel="stylesheet" id="R-variant-style">
+    <link href="/despliegue/css/chroma-relearn-light.css?1728492289" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/despliegue/css/variant.css?1728492289" rel="stylesheet">
+    <link href="/despliegue/css/print.css?1728492289" rel="stylesheet" media="print">
+    <script src="/despliegue/js/variant.js?1728492289"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/web.infenlaces.com\/despliegue';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'relearn-light' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copiar en el portapapeles`;
+      window.T_Copied_to_clipboard = `¡Copiado al portapapeles!`;
+      window.T_Copy_link_to_clipboard = `Copiar enlace al portapapeles`;
+      window.T_Link_copied_to_clipboard = `¡Enlace copiado al portapapeles!`;
+      window.T_Reset_view = `Restablecer vista`;
+      window.T_View_reset = `¡Ver reajuste!`;
+      window.T_No_results_found = `No se han encontrado resultados para "{0}"`;
+      window.T_N_results_found = `{1} resultados encontrados para "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/despliegue/es/presentacion/051_git/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menú (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Tabla de contenido (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#git-y-github">Git y GitHub</a>
+      <ul>
+        <li><a href="#introducción-a-git">Introducción a Git</a></li>
+        <li><a href="#github-repositorios-remotos">GitHub: Repositorios remotos</a></li>
+        <li><a href="#github-actions-cicd">GitHub Actions (CI/CD)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/despliegue/es/index.html"><span itemprop="name">Despliegue de aplicaciones web</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/despliegue/es/presentacion/index.html"><span itemprop="name">Presentación</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Git y Github</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/despliegue/es/presentacion/04_linux_redes/index.html" title="Redes y linux (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/despliegue/es/presentacion/05_docker/index.html" title="Presentacion (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Más"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="git-y-github">Git y Github</h1>
+
+<h2 id="git-y-github">Git y GitHub</h2>
+<h3 id="introducción-a-git">Introducción a Git</h3>
+<ul>
+<li>Conceptos básicos de control de versiones: qué es Git y cómo funciona.</li>
+<li>Comandos fundamentales de Git: <code>init</code>, <code>clone</code>, <code>add</code>, <code>commit</code>, <code>push</code>, <code>pull</code>, <code>branch</code>.</li>
+</ul>
+<h3 id="github-repositorios-remotos">GitHub: Repositorios remotos</h3>
+<ul>
+<li>Uso de GitHub para almacenar y gestionar repositorios de forma remota.</li>
+<li>Creación y administración de ramas en GitHub.</li>
+<li>Pull requests y colaboración en proyectos.</li>
+</ul>
+<h3 id="github-actions-cicd">GitHub Actions (CI/CD)</h3>
+<ul>
+<li>Introducción a GitHub Actions para automatizar flujos de trabajo.</li>
+<li>Configuración de pipelines CI/CD para desplegar aplicaciones.</li>
+<li>Integración de GitHub Actions con AWS y otros servicios.</li>
+</ul>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <style>
+            #R-logo svg,
+            #R-logo svg * {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              fill: #282828 !important;
+              fill: var(--MENU-SECTIONS-BG-color) !important;
+              opacity: .945;
+            }
+            a#R-logo {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              font-family: 'Work Sans', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+              font-size: 1.875rem;
+              font-weight: 300;
+              margin-top: -.8125rem;
+              max-width: 60%;
+              text-transform: uppercase;
+              width: 14.125rem;
+              white-space: nowrap;
+            }
+            a#R-logo:hover {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+            }
+            #R-logo svg {
+              margin-bottom: -1.25rem;
+              margin-inline-start: -1.47rem;
+              margin-inline-end: .5rem;
+              width: 40.5%;
+            }
+            @media only all and (max-width: 59.999rem) {
+              a#R-logo {
+                font-size: 1.5625rem;
+                margin-top: -.1875rem;
+              }
+              #R-logo svg {
+                margin-bottom: -.75rem;
+                margin-inline-start: -1.47rem;
+                margin-inline-end: .5rem;
+              }
+            }
+          </style>
+          <a id="R-logo" href="/despliegue/es/index.html">
+          <img height="125px" width="300px" src="/images/logo_web.png" alt="logo">
+          </a>
+        </div>
+
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-search" title="Buscar (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Buscar</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Buscar...">
+            <button class="search-clear" type="button" data-search-clear="" title="Borrar búsqueda"><i class="fas fa-times" title="Borrar búsqueda"></i></button>
+          </div>
+        </search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/despliegue/js/auto-complete.js?1728492289" defer></script>
+        <script src="/despliegue/js/lunr/lunr.min.js?1728492289" defer></script>
+        <script src="/despliegue/js/lunr/lunr.stemmer.support.min.js?1728492289" defer></script>
+        <script src="/despliegue/js/lunr/lunr.multi.min.js?1728492289" defer></script>
+        <script src="/despliegue/js/lunr/lunr.en.min.js?1728492289" defer></script>
+        <script src="/despliegue/js/search.js?1728492289" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li>
+            <a class="padding" href="https://cpilosenlaces.com">
+            <i class='fas fa-school'></i> CPIFP Los Enlaces</a></li>
+          </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/despliegue/es/presentacion/index.html" class="parent "><a class="padding" href="/despliegue/es/presentacion/index.html">Presentación</a><ul id="R-subsections-915191e2d1c441aa5b1d7c75c69c0830" class="morespace collapsible-menu">
+          <li data-nav-id="/despliegue/es/presentacion/01_situacion/index.html" class=""><a class="padding" href="/despliegue/es/presentacion/01_situacion/index.html">Punto de partida</a></li>
+          <li data-nav-id="/despliegue/es/presentacion/02_motivacion/index.html" class=""><a class="padding" href="/despliegue/es/presentacion/02_motivacion/index.html">Motivación</a></li>
+          <li data-nav-id="/despliegue/es/presentacion/03_temario/index.html" class=""><a class="padding" href="/despliegue/es/presentacion/03_temario/index.html">Programación</a></li>
+          <li data-nav-id="/despliegue/es/presentacion/04_linux_redes/index.html" class=""><a class="padding" href="/despliegue/es/presentacion/04_linux_redes/index.html">Redes y linux</a></li>
+          <li data-nav-id="/despliegue/es/presentacion/051_git/index.html" class="active"><a class="padding" href="/despliegue/es/presentacion/051_git/index.html">Git y Github</a></li>
+          <li data-nav-id="/despliegue/es/presentacion/05_docker/index.html" class=""><a class="padding" href="/despliegue/es/presentacion/05_docker/index.html">Presentacion</a></li>
+          <li data-nav-id="/despliegue/es/presentacion/06_aws/index.html" class=""><a class="padding" href="/despliegue/es/presentacion/06_aws/index.html">AWS</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">Más</div>
+          <ul class="space">
+            <li><a class="padding" href="https://www.docker.com/"><i class='fab fa-docker'></i>docker</a></li>
+            <li><a class="padding" href="https://es.wikieducator.org/Usuario:ManuelRomero/ProgramacionWeb/Contenido"><i class='fab fa-wikipedia-w'></i>   Wiki del curso</a></li>
+            <li><a class="padding" href="https://aws.amazon.com/es/"><i class='fab fa-amazon'></i>   Amazon</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Idioma</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-es" value="#R-select-language-es" data-url="/despliegue/es/presentacion/051_git/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Tema</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-relearn-light" value="relearn-light" selected>Relearn Light</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Borrar Historial</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Manuel Romero <a href="https://github.com/MAlejandroR" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/despliegue/js/clipboard.min.js?1728492289" defer></script>
+    <script src="/despliegue/js/perfect-scrollbar.min.js?1728492289" defer></script>
+    <script src="/despliegue/js/theme.js?1728492289" defer></script>
+  </body>
+</html>
