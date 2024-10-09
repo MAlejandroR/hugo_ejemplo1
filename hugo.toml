@@ -53,3 +53,9 @@ identified = ""
 url = "https://aws.amazon.com/es/"
 weight = 3
 
+
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+usafe=true
