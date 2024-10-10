@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Presentación :: Despliegue de aplicaciones web</title>
-    <link>http://web.infenlaces.com/despliegue/presentacion/index.html</link>
+    <link>http://localhost:37635/despliegue/presentacion/index.html</link>
     <description>Módulo del segundo curso flowchart LR A[Sistemas informáticos] --&gt;|antes de estudiar| B[Despliegue de aplicaciones] Es un módulo más de sistemas que de desarrollo&#xA;Pero es fundamental para poder hacer que nuestros desarrollos lleguen al público` Desplegar es subir a un servidor un desarrollo de manera funcional</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 Oct 2024 18:56:41 +0200</lastBuildDate>
-    <atom:link href="http://web.infenlaces.com/despliegue/presentacion/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:37635/despliegue/presentacion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Punto de partida</title>
-      <link>http://web.infenlaces.com/despliegue/presentacion/01_situacion/index.html</link>
+      <link>http://localhost:37635/despliegue/presentacion/01_situacion/index.html</link>
       <pubDate>Fri, 04 Oct 2024 18:56:41 +0200</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/presentacion/01_situacion/index.html</guid>
+      <guid>http://localhost:37635/despliegue/presentacion/01_situacion/index.html</guid>
       <description>Que vamos a ver aquí Información Nos matriculamos de un módulo de segundo.&#xA;Si no has cursado sistemas informáticos deberás de trabajar un poco más Vamos a trabajar con linux como nuestro sistema operativo Usaremos mucho el terminal para las diferentes acciones</description>
     </item>
     <item>
       <title>Motivación</title>
-      <link>http://web.infenlaces.com/despliegue/presentacion/02_motivacion/index.html</link>
+      <link>http://localhost:37635/despliegue/presentacion/02_motivacion/index.html</link>
       <pubDate>Fri, 04 Oct 2024 18:56:41 +0200</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/presentacion/02_motivacion/index.html</guid>
+      <guid>http://localhost:37635/despliegue/presentacion/02_motivacion/index.html</guid>
       <description>Soy desarrolladora Puede que los sitemas te gusten menos, pero son fundamentales Son una parte de un todo en el desarrollo web. Observa la siguiente imagen</description>
     </item>
     <item>
       <title>Programación</title>
-      <link>http://web.infenlaces.com/despliegue/presentacion/03_temario/index.html</link>
+      <link>http://localhost:37635/despliegue/presentacion/03_temario/index.html</link>
       <pubDate>Fri, 04 Oct 2024 18:56:41 +0200</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/presentacion/03_temario/index.html</guid>
+      <guid>http://localhost:37635/despliegue/presentacion/03_temario/index.html</guid>
       <description>Que vamos a ver aquí Tema Descripción Tema 1 Repaso conceptos redes y comandos Linux Tema 2 Docker: Sistema de virtualización basado en contenedores Tema 3 Git y Github: Sistemas de control de versiones y documentación Tema 4 Servicios implicados en el desarrollo web: Apache, DNS y SSH Tema 5 AWS y los web services: Servicios básicos Tema 6 Amazon ECR (Elastic Container Registry) Amazon ECS (Elastic Container Service) Tema 7 AWS SAM (Serverless Application Model) CI/CD en AWS y en GitHub (GitHub Actions) Amazon Route 53 (servicio de DNS) AWS CodeCommit (Sistema de control de versiones compatible con Git) Tema 8 Amazon Elastic Beanstalk (Despliegue de aplicaciones) AWS EKS (Elastic Kubernetes Service)</description>
     </item>
     <item>
       <title>Redes y linux</title>
-      <link>http://web.infenlaces.com/despliegue/presentacion/04_linux_redes/index.html</link>
+      <link>http://localhost:37635/despliegue/presentacion/04_linux_redes/index.html</link>
       <pubDate>Fri, 04 Oct 2024 18:56:41 +0200</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/presentacion/04_linux_redes/index.html</guid>
+      <guid>http://localhost:37635/despliegue/presentacion/04_linux_redes/index.html</guid>
       <description>Repaso de conceptos de redes y comandos Linux Repaso de conceptos de redes y comandos Linux Estructura básica de red y conceptos clave&#xA;Explicación de IP, subredes, máscaras de red y puerta de enlace. Diferencias entre redes públicas y privadas. Comandos básicos de red en Linux&#xA;Uso de comandos como ifconfig, ip, ping, netstat, traceroute y nslookup. Configuración de interfaces de red&#xA;Configuración manual de interfaces de red con ifconfig o ip. Asignación estática y dinámica de IPs (DHCP). Conceptos básicos de DNS</description>
     </item>
     <item>
       <title>Git y Github</title>
-      <link>http://web.infenlaces.com/despliegue/presentacion/051_git/index.html</link>
+      <link>http://localhost:37635/despliegue/presentacion/051_git/index.html</link>
       <pubDate>Fri, 04 Oct 2024 18:56:41 +0200</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/presentacion/051_git/index.html</guid>
+      <guid>http://localhost:37635/despliegue/presentacion/051_git/index.html</guid>
       <description>Git y GitHub Introducción a Git Conceptos básicos de control de versiones: qué es Git y cómo funciona. Comandos fundamentales de Git: init, clone, add, commit, push, pull, branch. GitHub: Repositorios remotos Uso de GitHub para almacenar y gestionar repositorios de forma remota. Creación y administración de ramas en GitHub. Pull requests y colaboración en proyectos. GitHub Actions (CI/CD) Introducción a GitHub Actions para automatizar flujos de trabajo. Configuración de pipelines CI/CD para desplegar aplicaciones. Integración de GitHub Actions con AWS y otros servicios.</description>
     </item>
     <item>
       <title>Presentacion</title>
-      <link>http://web.infenlaces.com/despliegue/presentacion/05_docker/index.html</link>
+      <link>http://localhost:37635/despliegue/presentacion/05_docker/index.html</link>
       <pubDate>Fri, 04 Oct 2024 18:56:41 +0200</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/presentacion/05_docker/index.html</guid>
+      <guid>http://localhost:37635/despliegue/presentacion/05_docker/index.html</guid>
       <description>Docker Introducción a los contenedores y Docker Comandos de Docker en terminal El fichero Dockerfile y buenas prácticas El fichero docker-compose.yaml Volúmenes y persistencia de datos en Docker Redes en Docker Crear un contenedor con un web service inverter y dominios para dockerizar Publicación y gestión de imágenes (Docker Hub o registro privado) Git Servicios del Servidor Apache nginx DNS ssh Amazon</description>
     </item>
     <item>
       <title>AWS</title>
-      <link>http://web.infenlaces.com/despliegue/presentacion/06_aws/index.html</link>
+      <link>http://localhost:37635/despliegue/presentacion/06_aws/index.html</link>
       <pubDate>Fri, 04 Oct 2024 18:56:41 +0200</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/presentacion/06_aws/index.html</guid>
+      <guid>http://localhost:37635/despliegue/presentacion/06_aws/index.html</guid>
       <description>AWS (Ciclo Superior Despliegue) Tema 5: AWS y los web services: Servicios básicos Introducción a AWS y el concepto de Cloud Computing. Modelos de servicio: IaaS, PaaS, SaaS. Principales servicios de AWS: EC2, S3, RDS, y Lambda. Tema 6: Amazon ECR (Elastic Container Registry) Introducción a la gestión de imágenes de contenedores en Amazon. Cómo crear y almacenar imágenes Docker en Amazon ECR. Tema 7: Amazon ECS (Elastic Container Service) Gestión de contenedores con Amazon ECS. Implementación y administración de clústeres de contenedores. Tema 8: AWS SAM (Serverless Application Model) Introducción a la arquitectura serverless. Creación y despliegue de aplicaciones sin servidor usando AWS SAM. CI/CD en AWS y en GitHub (GitHub Actions) Uso de GitHub Actions para integrar y desplegar aplicaciones en AWS. Pipeline de CI/CD en AWS. Amazon Route 53 (Servicio de DNS) Configuración y gestión de dominios con Amazon Route 53. Enrutamiento y registro de dominios. AWS CodeCommit (Sistema de control de versiones compatible con Git) Uso de AWS CodeCommit para gestionar repositorios de Git. Integración con otros servicios de AWS para el control de versiones. Tema 9: Amazon Elastic Beanstalk (Despliegue de aplicaciones) Despliegue automático de aplicaciones en la nube usando Elastic Beanstalk. Administración y escalabilidad automática de aplicaciones web. Tema 10: AWS EKS (Elastic Kubernetes Service) Introducción a la orquestación de contenedores con Kubernetes en AWS. Creación y gestión de clústeres de Kubernetes con AWS EKS.</description>
     </item>
   </channel>
