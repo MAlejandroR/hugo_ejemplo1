@@ -12,7 +12,6 @@ weight= 20
 * Son una parte de un todo en el desarrollo web. 
 * Observa la siguiente imagen
 
-![desarrollo web](/images/desarrollo_web.png)
 
 {{<img "images/desarrollo_web.png" "desarrollo">}}
 
