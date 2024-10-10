@@ -18,4 +18,4 @@ weight= 10
 
 
 
-{{<img src ="/images/linux_server.png" alt="Linux server" >}}
+{{<img src ="images/linux_server.png" alt="Linux server" >}}
