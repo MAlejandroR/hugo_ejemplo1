@@ -14,4 +14,6 @@ weight= 20
 
 ![desarrollo web](/images/desarrollo_web.png)
 
+{{<img "images/desarrollo_web.png" "desarrollo">}}
+
 
