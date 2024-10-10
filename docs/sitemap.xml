@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/despliegue/presentacion/01_situacion/index.html</loc>
+    <loc>http://web.infenlaces.com/despliegue/presentacion/01_situacion/index.html</loc>
     <lastmod>2024-10-04T18:56:41+02:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/despliegue/presentacion/02_motivacion/index.html</loc>
+    <loc>http://web.infenlaces.com/despliegue/presentacion/02_motivacion/index.html</loc>
     <lastmod>2024-10-04T18:56:41+02:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/despliegue/presentacion/03_temario/index.html</loc>
+    <loc>http://web.infenlaces.com/despliegue/presentacion/03_temario/index.html</loc>
     <lastmod>2024-10-04T18:56:41+02:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/despliegue/presentacion/04_linux_redes/index.html</loc>
+    <loc>http://web.infenlaces.com/despliegue/presentacion/04_linux_redes/index.html</loc>
     <lastmod>2024-10-04T18:56:41+02:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/despliegue/presentacion/051_git/index.html</loc>
+    <loc>http://web.infenlaces.com/despliegue/presentacion/051_git/index.html</loc>
     <lastmod>2024-10-04T18:56:41+02:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/despliegue/presentacion/05_docker/index.html</loc>
+    <loc>http://web.infenlaces.com/despliegue/presentacion/05_docker/index.html</loc>
     <lastmod>2024-10-04T18:56:41+02:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/despliegue/presentacion/06_aws/index.html</loc>
+    <loc>http://web.infenlaces.com/despliegue/presentacion/06_aws/index.html</loc>
     <lastmod>2024-10-04T18:56:41+02:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/despliegue/index.html</loc>
+    <loc>http://web.infenlaces.com/despliegue/index.html</loc>
     <lastmod>2024-10-04T18:56:41+02:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/despliegue/presentacion/index.html</loc>
+    <loc>http://web.infenlaces.com/despliegue/presentacion/index.html</loc>
     <lastmod>2024-10-04T18:56:41+02:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/despliegue/categories/index.html</loc>
+    <loc>http://web.infenlaces.com/despliegue/categories/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/despliegue/tags/index.html</loc>
+    <loc>http://web.infenlaces.com/despliegue/tags/index.html</loc>
   </url>
 </urlset>
