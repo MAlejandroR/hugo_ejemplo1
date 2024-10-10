@@ -5,8 +5,8 @@ draft = false
 weight= 60
 
 +++
-## Servicios implicados en el desarrollo web: HTTP/HTTPS, DNS y SSH
 
+> [!Caution] Servicios implicados en el desarrollo web: HTTP/HTTPS, DNS y SSH
 Exploramos los principales servicios y protocolos que permiten el funcionamiento de un sitio web, desde la transmisión segura de datos (HTTP/HTTPS), la resolución de nombres de dominio (DNS) y el acceso remoto a servidores (SSH). Estos servicios son fundamentales para garantizar un despliegue web eficiente y seguro.
 
 1. **HTTP/HTTPS**

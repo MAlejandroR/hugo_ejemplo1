@@ -7,7 +7,6 @@ weight= 40
 +++
 
 ## Repaso de conceptos de redes y comandos Linux
-## Repaso de conceptos de redes y comandos Linux
 
 1. **Estructura básica de red y conceptos clave**
     - Explicación de IP, subredes, máscaras de red y puerta de enlace.
