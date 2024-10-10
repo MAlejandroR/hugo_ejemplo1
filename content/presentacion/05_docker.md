@@ -1,5 +1,5 @@
 +++
-title = 'Presentacion'
+title = 'Docker'
 date = 2024-10-04T18:56:41+02:00
 draft = false
 weight= 50
@@ -18,13 +18,4 @@ weight= 50
 6. Redes en Docker
 7. Crear un contenedor con un web service inverter y dominios para dockerizar
 8. Publicación y gestión de imágenes (Docker Hub o registro privado)
-
-## Git
-
-
-## Servicios del Servidor
-### Apache nginx
-### DNS
-### ssh
-## Amazon   
 
